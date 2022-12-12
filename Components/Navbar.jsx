@@ -1,6 +1,6 @@
 import { Search, Person, LocalMall, Menu } from '@mui/icons-material';
 import React, { useState } from 'react';
-import Cart from '../Pages/Cart';
+import Cart from './Cart';
 import MobileDropdown from './MobileDropdown';
 
 const Navbar = () => {
