@@ -1,0 +1,36 @@
+.mobileDropdown {
+  text-transform: uppercase;
+  position: absolute;
+  display: grid;
+  place-items: center;
+  justify-content: center;
+  flex-direction: column;
+  font-size: 1rem;
+  top: 100px;
+  width: 100%;
+  height: 80vh;
+  padding: 10px;
+  transform: translateX(-45%);
+  background: #fff;
+  transition: all 1s ease-in-out;
+  border-radius: 10px;
+
+  &__link {
+    align-items: center;
+    padding: 10px 0 !important;
+  }
+  .link {
+    display: flex;
+    justify-content: center;
+    line-height: 2rem;
+    transition: all 0.1s ease-in-out;
+
+    &:hover {
+      text-align: center;
+      background-color: #d1d0d0;
+      width: 100%;
+      padding: 5px;
+      border-radius: 10px;
+    }
+  }
+}

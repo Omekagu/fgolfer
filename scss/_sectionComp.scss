@@ -1,0 +1,66 @@
+.SectionComp {
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
+  background: url(https://www.kenzo.com/dw/image/v2/AAUH_PRD/on/demandware.static/-/Library-Sites-SharedLibraryKenzo/default/dw337fda1b/home_nigo/271022_G6/IMG_HOMEPAGE_OUTERWEAR_DESKTOP_1440x734.jpg?sw=2560&sh=1305);
+  height: 100vh;
+  img {
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+
+    @media only screen and (max-width: $bp--smallest) {
+      max-width: 100%;
+      min-height: 100vh;
+    }
+  }
+
+  &__video {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+
+    @media only screen and (max-width: $bp--smallest) {
+      // width: 100vw;
+      height: 100vh;
+    }
+  }
+  &__container {
+    text-transform: uppercase;
+    position: absolute;
+    top: 86%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-family: 'Times New Roman', Times, serif;
+
+    @media only screen and (max-width: $bp--smallest) {
+      width: 100%;
+      left: 58%;
+    }
+  }
+  &__title {
+    font-size: 1.7rem;
+    color: #fff;
+    display: block;
+
+    @media only screen and (max-width: $bp--largest) {
+      font-size: 1rem;
+    }
+  }
+  p {
+    display: block;
+    border: 3px solid #fff;
+    font-size: 1rem;
+    text-align: center;
+    border-radius: 30%;
+    width: 30%;
+    padding: 5px;
+    color: #fff;
+    margin-left: 119px;
+
+    @media only screen and (max-width: $bp--largest) {
+      font-size: 0.7rem;
+      translate: -2rem;
+    }
+  }
+}

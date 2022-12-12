@@ -1,0 +1,16 @@
+.men {
+  //   background: gray;
+  &__container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+    margin-left: 60px;
+    padding-top: 100px;
+    border-bottom: 1px solid #000;
+
+    @media only screen and (max-width: $bp--smallest) {
+      margin-left: 0;
+    }
+  }
+}

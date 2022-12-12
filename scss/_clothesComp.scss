@@ -1,0 +1,63 @@
+.ClothesComp {
+  padding: 15px;
+  margin: 10px 0px 10px 1px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  // border: 2px solid #b8b7b7;
+  transition: all 0.3s ease;
+  text-transform: capitalize;
+  @media only screen and (max-width: $bp--smallest) {
+    padding: 5px;
+    justify-content: center;
+    // background-color: #b1b4b7;
+  }
+
+  &:hover {
+    // border-radius: 0.7rem;
+    background-color: #b8b7b7;
+    // border: 1px solid #000;
+    transform: scale(0.9);
+    cursor: pointer;
+  }
+  &__img {
+    width: 270px;
+    // border-radius: 0.4rem;
+
+    @media only screen and (max-width: $bp--smallest) {
+      width: 170px;
+    }
+  }
+  &__btn {
+    margin-top: 10px;
+    &:hover {
+      background-color: #b8b7b7;
+      border: 1px solid #000;
+    }
+  }
+  &__btn--price {
+    display: flex;
+    text-align: center;
+    justify-content: space-between;
+    gap: 100px;
+
+    @media only screen and (max-width: $bp--smallest) {
+      flex-direction: column;
+      gap: 5px;
+    }
+  }
+  &__text {
+    padding: 10px;
+    border: 2px solid #b8b7b7;
+    font-size: 1.2rem;
+  }
+
+  &__tag {
+    font-size: 0.9rem;
+    font-weight: bolder;
+  }
+  &__price {
+    font-size: 1rem;
+    font-weight: lighter;
+  }
+}
