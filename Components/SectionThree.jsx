@@ -7,7 +7,7 @@ const SectionThree = () => {
       <SectionComp
         title="francis Golfer collection"
         tag="Limited Edition"
-        src="sew.mp4"
+        src="./fashion.mp4"
       />
     </div>
   );
