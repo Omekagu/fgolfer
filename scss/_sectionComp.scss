@@ -9,8 +9,9 @@
     background-size: cover;
 
     @media only screen and (max-width: $bp--smallest) {
+      background-size: cover;
       max-width: 100%;
-      min-height: 100vh;
+      min-height: 80vh;
     }
   }
 
