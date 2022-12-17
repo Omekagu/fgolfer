@@ -69,6 +69,9 @@ const Footer = () => {
           </div>
         </ul>
       </div>
+      <div className="mobileDropdown__footer">
+        <p>francisGolfer ©2022</p>
+      </div>
     </div>
   );
 };
