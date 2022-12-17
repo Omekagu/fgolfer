@@ -1,11 +1,14 @@
-import { Search, Person, LocalMall, Menu } from '@mui/icons-material';
+import { Search, Person, ShoppingCart, Menu } from '@mui/icons-material';
 import React, { useState } from 'react';
 import Cart from './Cart';
 import MobileDropdown from './MobileDropdown';
+import { useDispatch, useSelector } from 'react-redux';
 
 const Navbar = () => {
   const [open, setOpen] = useState(false);
   const [openCart, setOpenCart] = useState(false);
+  const { totalCount } = useSelector((state) => state.cart);
+
   return (
     <div>
       <nav className="navbar">
@@ -88,9 +91,9 @@ const Navbar = () => {
         <div className="navbar__right">
           <Person className="navbar__user" />
           <Search className="navbar__search" />
-          <LocalMall onClick={() => setOpenCart(!openCart)} />
+          <ShoppingCart onClick={() => setOpenCart(!openCart)} />
           {openCart && <Cart />}
-          <span>3</span>
+          <span>{totalCount}</span>
           <Menu className="navbar__menu" onClick={() => setOpen(!open)} />
           {open && <MobileDropdown />}
         </div>
