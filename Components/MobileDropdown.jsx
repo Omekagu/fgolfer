@@ -5,9 +5,7 @@ const MobileDropdown = () => {
     <div className="mobileDropdown">
       <div className="mobileDropdown__container">
         <div>
-          <a href="/Home" className="link mb-link">
-            New
-          </a>
+          <p className="link mb-link">New</p>
           <div className="mobileDropdown__dropdown-menu">
             <a href="/">southern urban</a>
             <a href="/">new in men</a>
@@ -16,9 +14,7 @@ const MobileDropdown = () => {
         </div>
 
         <div>
-          <a href="/Men" className="link mb-link">
-            Men
-          </a>
+          <p className="link mb-link">Men</p>
           <div className="mobileDropdown__dropdown-menu">
             <a href="/">southern urban</a>
             <a href="/">tailoring</a>
@@ -31,9 +27,7 @@ const MobileDropdown = () => {
         </div>
 
         <div>
-          <a href="/Women" className="link mb-link">
-            Women
-          </a>
+          <p className="link mb-link">Women</p>
           <div className="mobileDropdown__dropdown-menu">
             <a href="/">southern urban</a>
             <a href="/">tailoring</a>
@@ -46,18 +40,14 @@ const MobileDropdown = () => {
         </div>
 
         <div>
-          <a href="/MadetoMeasure" className="link mb-link">
-            made to measure
-          </a>
+          <p className="link mb-link">made to measure</p>
           <div className="mobileDropdown__dropdown-menu">
             <a href="/">southern urban</a>
           </div>
         </div>
 
         <div>
-          <a href="/Accessories" className="link mb-link">
-            Accessories
-          </a>
+          <p className="link mb-link">Accessories</p>
           <div className="mobileDropdown__dropdown-menu">
             <a href="/">tie</a>
           </div>
