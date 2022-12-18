@@ -68,12 +68,17 @@ const MobileDropdown = () => {
             Videos
           </a>
         </div>
-        <a href="tel:+4733378901" className="link mb-link">
-          Contact Us
-        </a>
-        <a href="mailto:someone@example.com" className="link mb-link">
-          Help center
-        </a>
+        <div>
+          <a href="tel:+4733378901" className="link mb-link">
+            Contact Us
+          </a>
+        </div>
+
+        <div>
+          <a href="mailto:someone@example.com" className="link mb-link">
+            Help center
+          </a>
+        </div>
       </div>
 
       <div className="mobileDropdown__footer">
