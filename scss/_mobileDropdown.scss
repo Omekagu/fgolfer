@@ -1,7 +1,7 @@
 .mobileDropdown {
   top: 100px;
   width: auto;
-  height: 100vh;
+  height: 85vh;
   padding: 0 30px 0 30px;
   transform: translateX(-45%);
   background: #fff;
@@ -10,8 +10,10 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  overflow: scroll;
 
   &__container {
+    position: initial;
     text-transform: uppercase;
     font-size: 1rem;
     width: 300px;
@@ -23,19 +25,37 @@
   }
   .link {
     display: flex;
+    font-size: 0.9rem;
     flex-direction: column;
     line-height: 2rem;
     transition: all 0.1s ease-in-out;
 
     &:hover {
-      text-align: center;
-      width: 100%;
-      padding: 5px;
-      border-radius: 10px;
+      width: fit-content;
+    }
+  }
+  &__dropdown-menu {
+    position: initial;
+    display: flex;
+    flex-direction: column;
+    line-height: 2rem;
+    font-size: 0.7rem;
+    transition: display 650ms;
+    width: fit-content;
+
+    &:hover {
+      width: fit-content;
+    }
+    &::before {
+      display: none;
     }
   }
   &__footer {
     text-transform: capitalize;
     font-size: 15px;
+  }
+
+  .link:hover > &__dropdown-menu {
+    visibility: visible;
   }
 }
