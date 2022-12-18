@@ -6,7 +6,7 @@ const SectionThree = () => {
     <div className="HomeSectionOne">
       <SectionComp
         title="francis Golfer collection"
-        tag="Limited Edition"
+        tag="vintage"
         src="./fashion.mp4"
       />
     </div>

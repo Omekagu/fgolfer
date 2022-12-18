@@ -6,7 +6,7 @@ const SectionOne = () => {
     <div>
       <SectionComp
         title="francis Golfer collection"
-        tag="Limited Edition"
+        tag="Top"
         src="./fashion.mp4"
       />
     </div>

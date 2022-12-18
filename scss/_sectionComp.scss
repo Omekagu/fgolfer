@@ -11,7 +11,7 @@
     @media only screen and (max-width: $bp--smallest) {
       background-size: cover;
       max-width: 100%;
-      min-height: 80vh;
+      min-height: 60vh;
     }
   }
 
@@ -35,7 +35,7 @@
 
     @media only screen and (max-width: $bp--smallest) {
       width: 100%;
-      left: 58%;
+      left: 70%;
     }
   }
   &__title {
@@ -60,7 +60,7 @@
 
     @media only screen and (max-width: $bp--largest) {
       font-size: 0.7rem;
-      translate: -2rem;
+      translate: -5rem;
     }
   }
 }
