@@ -149,7 +149,7 @@
 }
 
 .footer .col {
-  width: 190px;
+  width: 300px;
   // background: white;
   height: auto;
   float: left;
@@ -228,7 +228,7 @@
 }
 @media only screen and (max-width: 500px) {
   .footer .col {
-    width: 50%;
+    width: 100%;
   }
   .footer .col h1 {
     font-size: 14px;
@@ -237,7 +237,7 @@
     font-size: 13px;
   }
 }
-@media only screen and (max-width: 340px) {
+@media only screen and (max-width: 320px) {
   .footer .col {
     width: 100%;
   }
