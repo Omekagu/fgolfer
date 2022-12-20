@@ -113,12 +113,22 @@ const Footer = () => {
               </ul>
             </div>
             <div class="col">
-              <h1>Support</h1>
-              <ul>
-                <li>Contact us</li>
-                <li>Web chat</li>
-                <li>Open ticket</li>
-              </ul>
+              <label for="state">
+                <div class="button">Contact Us</div>
+              </label>
+              <input type="checkbox" id="state" hidden />
+              <div class="content">
+                <div class="inner">
+                  <ul>
+                    <li>Webmail</li>
+                    <li>Redeem code</li>
+                    <li>WHOIS lookup</li>
+                    <li>Site map</li>
+                    <li>Web templates</li>
+                    <li>Email templates</li>
+                  </ul>
+                </div>
+              </div>
             </div>
             <div class="col">
               {/* Newsletter */}

@@ -242,3 +242,31 @@
     width: 100%;
   }
 }
+.button {
+  background: #000;
+  color: #fff;
+  cursor: pointer;
+  font-size: inherit;
+  // padding: 16px;
+  // width: 500px;
+  box-sizing: border-box;
+}
+.button:hover {
+  opacity: 0.7;
+}
+.content {
+  background: #ffffcc;
+  // width: 500px;
+  overflow: hidden;
+  max-height: 0;
+  transition: max-height 20s ease;
+  font-size: 18pt;
+  overflow: hidden;
+  box-sizing: border-box;
+}
+#state:checked ~ .content {
+  max-height: initial;
+}
+.inner {
+  margin: 16px;
+}
