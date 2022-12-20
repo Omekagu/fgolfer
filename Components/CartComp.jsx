@@ -1,22 +1,22 @@
 import { Add, Remove } from '@mui/icons-material';
-import React from 'react';
+import React, { useEffect } from 'react';
+import { useSelector, useDispatch } from 'react-redux';
 
-const CartComp = () => {
+const CartComp = ({ name, image, price, brand, sex }) => {
   return (
     <div className="CartComp">
       <div className="CartComp__left">
-        <img
-          className="CartComp__img"
-          src="./images/golfer (14).jpeg"
-          alt="cart img"
-        />
+        <img className="CartComp__img" src={image} alt="cart img" />
       </div>
       <div className="CartComp__right">
-        <h3>pizza</h3>
-        <p>sweet & delicious</p>
+        <p>
+          {name}
+          <h4> {sex}</h4>
+        </p>
+        <h3>{brand}</h3>
         <div className="CartComp__price">
           <div>
-            <h3>N2,000</h3>
+            <h3>{price}</h3>
           </div>
 
           <div className="CartComp__count">

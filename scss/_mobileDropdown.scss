@@ -39,7 +39,7 @@
     width: fit-content;
     visibility: hidden;
     max-height: 0;
-    transition: all 1ms;
+    // transition: visibility 650s ease;
 
     &:hover {
       width: fit-content;

@@ -2,7 +2,7 @@ import { Search, Person, ShoppingCart, Menu } from '@mui/icons-material';
 import React, { useState } from 'react';
 import Cart from './Cart';
 import MobileDropdown from './MobileDropdown';
-import { useDispatch, useSelector } from 'react-redux';
+import { useSelector } from 'react-redux';
 
 const Navbar = () => {
   const [open, setOpen] = useState(false);

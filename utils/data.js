@@ -1,6 +1,7 @@
 const data = {
   products: [
     {
+      id: 1,
       name: 'francis golfer shirt',
       category: 'shirts',
       image: 'images/golfer (1).jpeg',
@@ -9,6 +10,7 @@ const data = {
       sex: 'men',
     },
     {
+      id: 2,
       name: 'golfer shirt',
       category: 'shirts',
       image: 'images/golfer (2).jpeg',
@@ -17,6 +19,7 @@ const data = {
       sex: 'men',
     },
     {
+      id: 3,
       name: 'Botta shirt',
       category: 'shirts',
       image: 'images/golfer (3).jpeg',
@@ -25,6 +28,7 @@ const data = {
       sex: 'men',
     },
     {
+      id: 4,
       name: 'Alien golfer shirt',
       category: 'shirts',
       image: 'images/golfer (4).jpeg',
@@ -33,6 +37,7 @@ const data = {
       sex: 'men',
     },
     {
+      id: 5,
       name: 'Golf golfer shirt',
       category: 'shirts',
       image: 'images/golfer (5).jpeg',
@@ -41,6 +46,7 @@ const data = {
       sex: 'men',
     },
     {
+      id: 6,
       name: 'francis golfer shirt',
       category: 'shirts',
       image: 'images/golfer (6).jpeg',
@@ -49,6 +55,8 @@ const data = {
       sex: 'men',
     },
     {
+      id: 7,
+
       name: 'francis golfer shirt',
       category: 'shirts',
       image: 'images/golfer (7).jpeg',
@@ -57,6 +65,7 @@ const data = {
       sex: 'men',
     },
     {
+      id: 8,
       name: 'francis golfer shirt',
       category: 'shirts',
       image: 'images/golfer (8).jpeg',
@@ -65,6 +74,7 @@ const data = {
       sex: 'men',
     },
     {
+      id: 9,
       name: 'francis golfer shirt',
       category: 'shirts',
       image: 'images/golfer (9).jpeg',
@@ -73,6 +83,7 @@ const data = {
       sex: 'men',
     },
     {
+      id: 10,
       name: 'francis golfer shirt',
       category: 'shirts',
       image: 'images/golfer (10).jpeg',
@@ -81,6 +92,7 @@ const data = {
       sex: 'men',
     },
     {
+      id: 11,
       name: 'francis golfer shirt',
       category: 'shirts',
       image: 'images/golfer (11).jpeg',
@@ -89,6 +101,7 @@ const data = {
       sex: 'men',
     },
     {
+      id: 12,
       name: 'francis golfer shirt',
       category: 'shirts',
       image: 'images/golfer (12).jpeg',
@@ -97,6 +110,7 @@ const data = {
       sex: 'men',
     },
     {
+      id: 13,
       name: 'francis golfer shirt',
       category: 'shirts',
       image: 'images/golfer (13).jpeg',
@@ -105,6 +119,7 @@ const data = {
       sex: 'men',
     },
     {
+      id: 14,
       name: 'francis golfer shirt',
       category: 'shirts',
       image: 'images/golfer (14).jpeg',

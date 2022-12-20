@@ -4,7 +4,7 @@ import { Email, Call, KeyboardArrowRight } from '@mui/icons-material';
 const Footer = () => {
   return (
     <div className="footer">
-      {/* Newsletter */}
+      {/* Newsletter
       <div className="footer__newsletter">
         <h3 className="footer__newsletter--header">
           Newsletter <span>?</span>
@@ -27,7 +27,7 @@ const Footer = () => {
       </div>
 
       {/* customer */}
-      <div className="footer__customer">
+      {/* <div className="footer__customer">
         <h3 className="footer__customer--header">Customer Service</h3>
         <p className="footer__customer--text">
           Monday to Friday 9.30am - 6.30pm (African time)
@@ -40,9 +40,8 @@ const Footer = () => {
           <Email /> Send us a message
         </p>
       </div>
-
       {/* ASSISTANCE */}
-      <div className="footer__assistance">
+      {/* <div className="footer__assistance">
         <h3 className="footer__assistance--header">Assistance</h3>
         <ul className="footer__assistance--item">
           <div>
@@ -68,9 +67,84 @@ const Footer = () => {
             </li>
           </div>
         </ul>
-      </div>
-      <div className="mobileDropdown__footer">
-        <p>francisGolfer ©2022</p>
+      </div> */}
+      <div>
+        <div class="footer">
+          <div class="contain">
+            <div class="col">
+              <h1>Company</h1>
+              <ul>
+                <li>About</li>
+                <li>Mission</li>
+                <li>Services</li>
+                <li>Social</li>
+                <li>Get in touch</li>
+              </ul>
+            </div>
+            <div class="col">
+              <h1>Products</h1>
+              <ul>
+                <li>About</li>
+                <li>Mission</li>
+                <li>Services</li>
+                <li>Social</li>
+                <li>Get in touch</li>
+              </ul>
+            </div>
+            <div class="col">
+              <h1>Accounts</h1>
+              <ul>
+                <li>About</li>
+                <li>Mission</li>
+                <li>Services</li>
+                <li>Social</li>
+                <li>Get in touch</li>
+              </ul>
+            </div>
+            <div class="col">
+              <h1>Resources</h1>
+              <ul>
+                <li>Webmail</li>
+                <li>Redeem code</li>
+                <li>WHOIS lookup</li>
+                <li>Site map</li>
+                <li>Web templates</li>
+                <li>Email templates</li>
+              </ul>
+            </div>
+            <div class="col">
+              <h1>Support</h1>
+              <ul>
+                <li>Contact us</li>
+                <li>Web chat</li>
+                <li>Open ticket</li>
+              </ul>
+            </div>
+            <div class="col">
+              {/* Newsletter */}
+              <div className="footer__newsletter">
+                <h3 className="footer__newsletter--header">
+                  Newsletter <span>?</span>
+                </h3>
+                <p className="footer__newsletter--text">
+                  Get free shipping on your first order by subscribing to the
+                  Francis Golfer newsletter.
+                </p>
+                <div className="footer__newsletter--emailBox">
+                  <Email />
+                  <div>
+                    <input
+                      className="footer__newsletter--input"
+                      type="text"
+                      placeholder="Email"
+                    />
+                  </div>
+                  <KeyboardArrowRight />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   );
