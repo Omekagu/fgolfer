@@ -11,9 +11,9 @@ const CartComp = ({ name, image, price, brand, sex }) => {
       <div className="CartComp__right">
         <p>
           {name}
-          <h4> {sex}</h4>
+          <h4> sex: {sex}</h4>
         </p>
-        <h3>{brand}</h3>
+        <h3>Brand:{brand}</h3>
         <div className="CartComp__price">
           <div>
             <h3>{price}</h3>

@@ -1,12 +1,12 @@
 import React from 'react';
 
-const ClothesComp = ({ img, name, price }) => {
+const ClothesComp = ({ img, name, price, cart }) => {
   return (
     <div className="ClothesComp">
       <img className="ClothesComp__img" src={img} alt="shirt" />
-      <div className="ClothesComp__btn">
-        {/* <p className="ClothesComp__text">T-shirt</p> */}
-      </div>
+
+      <p className="ClothesComp__text">{cart}</p>
+      <div className="ClothesComp__btn"></div>
       <div className="ClothesComp__btn--price">
         <div>
           <p className="ClothesComp__tag">{name}</p>

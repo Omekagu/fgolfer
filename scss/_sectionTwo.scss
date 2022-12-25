@@ -20,7 +20,12 @@
       border-bottom: 2px solid #000;
     }
   }
-
+  &__add {
+    position: absolute;
+    font-size: 50px;
+    color: green;
+    transform: translate(-10px, 150px);
+  }
   &__clothesList {
     display: flex;
     // overflow: hidden;

@@ -10,20 +10,15 @@
   @media only screen and (max-width: $bp--smallest) {
     padding: 5px;
     justify-content: center;
-    // background-color: #b1b4b7;
   }
 
   &:hover {
-    // border-radius: 0.7rem;
     background-color: #b8b7b7;
-    // border: 1px solid #000;
     transform: scale(0.9);
     cursor: pointer;
   }
   &__img {
     width: 270px;
-    // border-radius: 0.4rem;
-
     @media only screen and (max-width: $bp--smallest) {
       width: 170px;
     }
@@ -48,16 +43,16 @@
   }
   &__text {
     padding: 10px;
-    border: 2px solid #b8b7b7;
+    position: absolute;
     font-size: 1.2rem;
   }
 
   &__tag {
     font-size: 0.9rem;
-    font-weight: bolder;
+    font-weight: lighter;
   }
   &__price {
-    font-size: 1rem;
-    font-weight: lighter;
+    font-size: 0.7rem;
+    font-weight: light;
   }
 }

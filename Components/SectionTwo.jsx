@@ -1,3 +1,4 @@
+import { AddShoppingCart } from '@mui/icons-material';
 import React from 'react';
 import data from '../utils/data';
 import ClothesComp from './ClothesComp';
@@ -23,6 +24,7 @@ const SectionTwo = () => {
               img={product.image}
               name={product.name}
               price={product.price}
+              cart={<AddShoppingCart className="sectionTwo__add" />}
             />
           ))}
         </div>

@@ -9,11 +9,19 @@
   height: 100vh;
   padding: 10px;
   transform: translateX(-53%);
-  background: #fff;
+  background: #f8f6f6;
   transition: all 1s ease-in-out;
   border-radius: 10px;
   overflow: scroll;
   &::-webkit-scrollbar {
     display: none;
+  }
+
+  &__summary {
+    display: flex;
+    justify-content: space-between;
+    flex: 1;
+    background: #fff;
+    padding: 10px;
   }
 }
