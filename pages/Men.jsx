@@ -8,7 +8,7 @@ const Men = () => {
       <div className="men__container">
         {data.products.map((product) => (
           <ClothesComp
-            key={product.name}
+            key={product.id}
             img={product.image}
             name={product.name}
             price={product.price}

@@ -2,7 +2,7 @@
   width: 325px;
   display: flex;
   align-items: center;
-  // justify-content: flex-start;
+  justify-content: space-evenly;
   margin: 5px;
   background: #fff;
   &__img {
@@ -17,7 +17,7 @@
     flex-direction: column;
     text-transform: capitalize;
     font-weight: lighter;
-    justify-content: flex-start;
+    justify-content: flex-end;
 
     h3 {
       font-size: 0.7rem;

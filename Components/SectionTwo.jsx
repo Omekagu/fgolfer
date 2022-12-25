@@ -20,7 +20,7 @@ const SectionTwo = () => {
         <div className="sectionTwo__clothesList">
           {data.products.map((product) => (
             <ClothesComp
-              key={product.name}
+              key={product.id}
               img={product.image}
               name={product.name}
               price={product.price}
