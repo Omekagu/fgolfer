@@ -20,7 +20,7 @@ const ClothesComp = ({ img, name, price, cart, product }) => {
         </div>
 
         <div>
-          <p className="ClothesComp__price">{price}</p>
+          <p className="ClothesComp__price">${price}</p>
         </div>
       </div>
     </div>
