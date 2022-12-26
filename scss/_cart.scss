@@ -17,10 +17,14 @@
     display: none;
   }
 
-  h5 {
+  &__payment {
     background: #2dc42d;
     padding: 10px;
     border-radius: 20px;
+  }
+  &__total {
+    font-weight: lighter;
+    font-size: 0.9rem;
   }
   &__summary {
     display: flex;
