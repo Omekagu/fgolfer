@@ -6,12 +6,13 @@ const Accessories = () => {
   return (
     <div className="men">
       <div className="men__container">
-        {data.products.map((product) => (
+        {data?.products.map((product) => (
           <ClothesComp
             key={product.id}
             img={product.image}
             name={product.name}
             price={product.price}
+            onClick={product}
           />
         ))}
       </div>

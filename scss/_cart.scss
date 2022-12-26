@@ -17,9 +17,15 @@
     display: none;
   }
 
+  h5 {
+    background: #2dc42d;
+    padding: 10px;
+    border-radius: 20px;
+  }
   &__summary {
     display: flex;
     justify-content: space-between;
+    align-items: center;
     flex: 1;
     background: #fff;
     padding: 10px;
