@@ -4,14 +4,14 @@ import data from '../../utils/data';
 const cartSlice = createSlice({
   name: 'cart',
   initialState: {
-    items: data.products,
+    Items: data.products,
     cartItems: [],
     totalAmount: 0,
     totalCount: 0,
   },
   reducers: {
     getCartTotal: (state) => {
-      let { totalAmount, totalCount } = state.items.reduce(
+      let { totalAmount, totalCount } = state.cartItems.reduce(
         (cartTotal, cartItem) => {
           const { price, amount } = cartItem;
           const itemTotal = price * amount;
@@ -25,13 +25,16 @@ const cartSlice = createSlice({
       state.totalCount = totalCount;
     },
     addToCart: (state, action) => {
-      state.cartItems.push(action.payload);
+      const temProduct = { ...action.payload, cartQuantity: 1 };
+      state.cartItems.push(temProduct);
     },
     remove: (state, action) => {
-      state.items = state.items.filter((item) => item.id !== action.payload);
+      state.cartItems = state.cartItems.filter(
+        (item) => item.id !== action.payload
+      );
     },
     increase: (state, action) => {
-      state.items = state.items.map((item) => {
+      state.cartItems = state.cartItems.map((item) => {
         if (item.id === action.payload) {
           return { ...item, amount: item.amount + 1 };
         }
@@ -39,7 +42,7 @@ const cartSlice = createSlice({
       });
     },
     decrease: (state, action) => {
-      state.items = state.items
+      state.cartItems = state.cartItems
         .map((item) => {
           if (item.id === action.payload) {
             return { ...item, amount: item.amount - 1 };
