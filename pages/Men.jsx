@@ -1,8 +1,14 @@
 import React from 'react';
 import ClothesComp from '../Components/ClothesComp';
 import data from '../utils/data';
+import { useDispatch } from 'react-redux';
+import { addToCart } from '../redux/features/cartSlice';
 
 const Men = () => {
+  const dispatch = useDispatch();
+  const handleAddToCart = (product) => {
+    dispatch(addToCart(product));
+  };
   return (
     <div className="men">
       <div className="men__container">
@@ -12,6 +18,7 @@ const Men = () => {
             img={product.image}
             name={product.name}
             price={product.price}
+            onAddToCart={() => handleAddToCart(product)}
           />
         ))}
       </div>

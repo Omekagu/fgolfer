@@ -4,15 +4,12 @@ import { useSelector, useDispatch } from 'react-redux';
 import { getCartTotal } from '../redux/features/cartSlice';
 
 const Cart = () => {
-  const { cartItems, totalAmount, totalCount } = useSelector(
-    (state) => state.cart
-  );
+  const { cartItems, totalAmount } = useSelector((state) => state.cart);
   const dispatch = useDispatch();
   useEffect(() => {
     dispatch(getCartTotal());
   }, [cartItems]);
 
-  console.log(cartItems);
   return (
     <div className="cart">
       <div className="cart__summary">

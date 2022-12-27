@@ -4,18 +4,18 @@ import data from '../../utils/data';
 const cartSlice = createSlice({
   name: 'cart',
   initialState: {
-    Items: data.products,
+    items: data.products,
     cartItems: [],
     totalAmount: 0,
     totalCount: 0,
   },
   reducers: {
     getCartTotal: (state) => {
-      let { totalAmount, totalCount } = state.cartItems.reduce(
+      let { totalAmount, totalCount } = state.items.reduce(
         (cartTotal, cartItem) => {
           const { price, amount } = cartItem;
-          const cartItemTotal = price * amount;
-          cartTotal.totalAmount += cartItemTotal;
+          const itemTotal = price * amount;
+          cartTotal.totalAmount += itemTotal;
           cartTotal.totalCount += amount;
           return cartTotal;
         },
@@ -28,27 +28,25 @@ const cartSlice = createSlice({
       state.cartItems.push(action.payload);
     },
     remove: (state, action) => {
-      state.cartItems = state.cartItems.filter(
-        (cartItem) => cartItem.id !== action.payload
-      );
+      state.items = state.items.filter((item) => item.id !== action.payload);
     },
     increase: (state, action) => {
-      state.cartItems = state.cartItems.map((cartItem) => {
-        if (cartItem.id === action.payload) {
-          return { ...cartItem, amount: cartItem.amount + 1 };
+      state.items = state.items.map((item) => {
+        if (item.id === action.payload) {
+          return { ...item, amount: item.amount + 1 };
         }
-        return cartItem;
+        return item;
       });
     },
     decrease: (state, action) => {
-      state.cartItems = state.cartItems
-        .map((cartItem) => {
-          if (cartItem.id === action.payload) {
-            return { ...cartItem, amount: cartItem.amount - 1 };
+      state.items = state.items
+        .map((item) => {
+          if (item.id === action.payload) {
+            return { ...item, amount: item.amount - 1 };
           }
-          return cartItem;
+          return item;
         })
-        .filter((cartItem) => cartItem.amount != 0);
+        .filter((item) => item.amount != 0);
     },
   },
 });
