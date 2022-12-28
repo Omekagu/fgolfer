@@ -3,6 +3,8 @@ import store from '../redux/store';
 import { Provider } from 'react-redux';
 import Layout from '../Components/Layout';
 import Head from 'next/head';
+import 'react-toastify/dist/ReactToastify.css';
+import { ToastContainer } from 'react-toastify';
 
 function MyApp({ Component, pageProps }) {
   return (
@@ -13,6 +15,7 @@ function MyApp({ Component, pageProps }) {
         <link rel="icon" href="./BBK.png" />
       </Head>
       <Layout>
+        <ToastContainer />
         <Component {...pageProps} />;
       </Layout>
     </Provider>
