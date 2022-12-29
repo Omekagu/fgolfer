@@ -1,7 +1,6 @@
 import { createSlice } from '@reduxjs/toolkit';
 import data from '../../utils/data';
 import { toast } from 'react-toastify';
-// import { useEffect } from 'react';
 
 // let cartContent = localStorage.getItem('cartItems')
 //   ? JSON.parse(localStorage.getItem('cartItems'))
@@ -11,7 +10,10 @@ const cartSlice = createSlice({
   name: 'cart',
   initialState: {
     Items: data.products,
-    cartItems: [],
+    cartItems:
+      typeof window !== 'undefined'
+        ? JSON.parse(localStorage.getItem('cartItems'))
+        : [],
     totalAmount: 0,
     totalCount: 0,
   },
@@ -56,7 +58,7 @@ const cartSlice = createSlice({
       toast.warning('deleted product  ', {
         position: 'bottom-left',
       });
-      localStorage.removeItem('cartItems', JSON.stringify(state.cartItems.id));
+      // localStorage.removeItem('cartItems', JSON.stringify(state.cartItems));
     },
     increase: (state, action) => {
       state.cartItems = state.cartItems.map((item) => {
