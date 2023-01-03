@@ -58,7 +58,7 @@ const cartSlice = createSlice({
       toast.warning('deleted product  ', {
         position: 'bottom-left',
       });
-      // localStorage.removeItem('cartItems', JSON.stringify(state.cartItems));
+      localStorage.setItem('cartItems', JSON.stringify(state.cartItems));
     },
     increase: (state, action) => {
       state.cartItems = state.cartItems.map((item) => {

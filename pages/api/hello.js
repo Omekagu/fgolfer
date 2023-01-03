@@ -1,5 +1,13 @@
-// Next.js API route support: https://nextjs.org/docs/api-routes/introduction
+const mongoose = require('mongoose');
 
-export default function handler(req, res) {
-  res.status(200).json({ name: 'John Doe' })
-}
+require('dotenv').config();
+
+const uri = process.env.DB_URI;
+
+mongoose
+  .connect(uri, {
+    useNewUrlParser: true,
+    useUnifiedTopology: true,
+  })
+  .then(() => console.log('mongoDB connection successful...'))
+  .catch((err) => console.log('mongoDB connection failed', err.message));

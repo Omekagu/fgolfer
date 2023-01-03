@@ -1,6 +1,6 @@
 .sectionTwo {
-  padding: 20px 0;
-  margin: 10px;
+  padding: 2px 0;
+  margin: 1px;
 
   &__list {
     display: flex;
@@ -20,18 +20,14 @@
       border-bottom: 2px solid #000;
     }
   }
-  &__add {
-    position: absolute;
-    font-size: 50px;
-    color: green;
-    transform: translate(-10px, 150px);
-  }
+  // &__add {
+  //   position: absolute;
+  //   font-size: 50px;
+  //   color: green;
+  //   transform: translate(-10px, 150px);
+  // }
   &__clothesList {
     display: flex;
-    // overflow: hidden;
-    // top: 0px;
-    // left: 0px;
-    // overflow: hidden;
     white-space: nowrap;
     animation: bannermove 5s linear infinite;
     &::-webkit-scrollbar {

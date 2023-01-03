@@ -8,7 +8,7 @@ const CartComp = ({ name, image, price, amount, id }) => {
   return (
     <div className="CartComp">
       <div className="CartComp__left">
-        <img className="CartComp__img" src={image} alt="cart img" />
+        <img className="CartComp__img " src={image} alt="cart img" />
       </div>
       <div className="CartComp__right">
         <p>{name}</p>
