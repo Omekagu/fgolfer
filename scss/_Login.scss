@@ -1,0 +1,25 @@
+.login {
+  padding: 100px 20px;
+  font-size: 0.7rem;
+
+  &__right {
+    display: flex;
+    align-items: center;
+  }
+
+  &__check {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 3px 0;
+    font-weight: lighter;
+    text-transform: capitalize;
+
+    h5 {
+      a {
+        text-decoration: underline;
+        color: #4d4b4b !important;
+      }
+    }
+  }
+}

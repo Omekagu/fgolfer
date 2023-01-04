@@ -3,6 +3,7 @@ import React, { useState } from 'react';
 import Cart from './Cart';
 import MobileDropdown from './MobileDropdown';
 import { useSelector } from 'react-redux';
+import Link from 'next/link';
 
 const Navbar = () => {
   const [open, setOpen] = useState(false);
@@ -89,7 +90,9 @@ const Navbar = () => {
         </div>
 
         <div className="navbar__right">
-          <Person className="navbar__user" />
+          <Link href="/Login">
+            <Person className="navbar__user" />
+          </Link>
           <Search className="navbar__search" />
           <ShoppingCart onClick={() => setOpenCart(!openCart)} />
           {openCart && <Cart />}

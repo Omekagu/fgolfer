@@ -1,0 +1,23 @@
+.input {
+  width: 100%;
+  flex: 1;
+  height: 30px;
+  outline: none;
+  &:focus {
+    border: 2px solid green;
+  }
+
+  &__box {
+    padding: 10px 0;
+    label {
+      font-size: 0.7rem;
+      color: #787777;
+      //   margin-bottom: 40px;
+    }
+  }
+}
+.checkbox {
+  width: 20px;
+  height: 20px;
+  margin-right: 3px;
+}
