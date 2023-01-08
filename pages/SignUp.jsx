@@ -3,7 +3,7 @@ import Link from 'next/link';
 import React from 'react';
 // import { signIn, signOut } from 'next-auth/react';
 
-const Login = () => {
+const SignUp = () => {
   return (
     <div className="login">
       <form action="">
@@ -15,7 +15,19 @@ const Login = () => {
           <label htmlFor="Email Address">Password *</label>
           <input type="password" className="input login__password" />
         </div>
-        <div className="login__check">
+        <div className="input__box">
+          <label htmlFor="Email Address">Password *</label>
+          <input type="password" className="input login__password" />
+        </div>
+        <div className="input__box">
+          <label htmlFor="Email Address">Password *</label>
+          <input type="password" className="input login__password" />
+        </div>
+        <div className="input__box">
+          <label htmlFor="Email Address">Password *</label>
+          <input type="file" className="input login__password" />
+        </div>
+        {/* <div className="login__check">
           <div className="login__right">
             <input type="checkbox" className="checkbox" />
             remember password
@@ -23,21 +35,15 @@ const Login = () => {
           <h5 className="forgot__password">
             <Link href="">forgot your password?</Link>
           </h5>
-        </div>
+        </div> */}
       </form>
-      <button className="login__btn btn">Login</button>
+      <button className="login__btn btn">Sign Up</button>
       <button className="login__google btn">
         <Google className="google_icon" />
-        Login with google
+        Sign Up with google
       </button>
-
-      <div className="create__account">
-        <Link href="/SignUp">
-          <button className="login__btn btn">Create an Account</button>
-        </Link>
-      </div>
     </div>
   );
 };
 
-export default Login;
+export default SignUp;
