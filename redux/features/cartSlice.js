@@ -11,10 +11,10 @@ const cartSlice = createSlice({
   initialState: {
     Items: data.products,
     cartItems:
-      typeof window !== 'undefined'
-        ? JSON.parse(localStorage.getItem('cartItems'))
-        : [],
-    totalAmount: 0,
+      typeof window !== 'null'
+        ? []
+        : JSON.parse(localStorage.getItem('cartItems')),
+    totalAmounst: 0,
     totalCount: 0,
   },
   reducers: {
@@ -33,7 +33,7 @@ const cartSlice = createSlice({
       state.totalCount = totalCount;
     },
     addToCart: (state, action) => {
-      const itemIndex = state.cartItems.indexOf(
+      const itemIndex = state.cartItems.findIndex(
         (item) => item.id === action.payload.id
       );
       if (itemIndex >= 0) {
@@ -44,7 +44,6 @@ const cartSlice = createSlice({
       } else {
         const tempProduct = { ...action.payload };
         state.cartItems.push(tempProduct);
-
         toast.success(`${action.payload.name} Added`, {
           position: 'bottom-left',
         });
